@@ -38,3 +38,19 @@ Now this context vector is passed to the decoder, which generates the output seq
 EXAMPLE.. “Good”,  “Night” as input in encoder 
 h1, h2 from encoder as hidden state and h1 termed as vector whereas h2 is d2 and rem is context….
 h2 is the final hidden state passed to decoder and words generated step by step “Guten”, “Nicht” ,<eos> as output in decoder….in german…..
+
+
+TASK 7 B..
+OVERFITTING-- This model performs well on training data but not well on test data while loss keeps decreasing, but validation loss starts increasing after a few epochs..
+UNDERFITTING-- The model performs well poorly on both training and validation datasets..
+TRAINING STABILITY-- If loss and accuracy curves are smooth and steadily improving ,the training is considered stable..
+
+TASK 8
+1. What are the challenges in training seq-to-seq models?
+Ans.Training seq-to-seq is challenging due to issues like long term dependancies handling,data sacrcity and large vocab size..
+
+2. What does a bad transition look like?
+Ans. A bad translation might have incorrect meaning ,grammatical error or missing words and other...it often occurs due to limited training data, lack of attention mechanism or poor generalization during inference..
+
+3.How can the model be improved further?
+Ans. The model can be improved by adding an attention mechanism ,using pre dfined embeddings or switching to transformer based model...
